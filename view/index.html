@@ -179,111 +179,190 @@
       <div class="box-row">
         <div class="box-cell">
           <div class="box-inner padding">
-            
-<div class="form-group">
-      <label class="col-sm-2 control-label">Tipo Ingreso</label>
-      <div class="col-sm-4">
+
+<div class="card" ng-controller="MDInputCtrl" >
+  <div class="card-heading">
+    <h2></h2>
+  </div>
+  <div class="card-body bg-dark">
+    <div class="row row-sm">
+      <div class="col-sm-6">
+        <div class="md-form-group">
+       
+         
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="md-form-group">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="card-body">
+    <div class="row row-sm">
+    
+        <div class="md-form-group">
+        
+          
+        </div>
+      </div>
+     
+      
+     
+
+
+
+       <div class="card" ng-controller="MDInputCtrl" >
+  <div class="card-heading">
+    <h2>INGRESOS</h2>
+  </div>
+  <div class="card-body bg-dark">
+    <div class="row row-sm">
+      <div class="col-sm-6">
+        <div class="md-form-group">
+          <label class="col-sm-4 control-label">Tipo Ingreso</label>
+    
         <select class="form-control">
           <option>Entrada</option>
           <option>Salida</option>
       </select>
+        </div>
       </div>
-      <label class="col-sm-2 control-label">N°Registro</label>
-      <div class="col-sm-4">
+      <div class="col-sm-6">
+        <div class="md-form-group">
+         <label class="col-sm-4 control-label">N°Registro</label>
+     
         <input type="text" class="form-control">
       </div>
-</div>
-<br> <br>
- 
- <div class="form-group">
-  <label class="col-sm-2 control-label">Patente</label>
-      <div class="col-sm-4">
-        <input type="text" class="form-control">
+        </div>
       </div>
-       <label class="col-sm-2 control-label">Tipo Carga</label>
-      <div class="col-sm-4">
-        <select class="form-control">
-          <option>Camion</option>
-          <option>Salida</option>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="row row-sm">
+      <div class="col-sm-12">
+        
+    
+        
+      </div>
+      <div class="col-sm-6">
+        <div class="md-form-group float-label">
+          <input class="md-input" ng-model="user.firstName" required>
+          <label>Patente</label>
+        </div>
+      </div>
+      <div class="col-sm-6">
+         <label class="col-sm-4 control-label">Tipo Carga</label>
+      <select class="form-control">
+          <option>Zona Austral</option>
+          <option>Imp Chile</option>
+          <option>Imp Ext</option>
+          <option>Lastre Chile</option>
+          <option>Lastre Ext</option>
+          <option>Transito Int Chile</option>
+          <option>Transito Int Ext</option>
       </select>
       </div>
-  </div>
-  <div class="form-group"> 
-      <label class="col-sm-2 control-label">Pesaje</label>
+        </div>
+     
+     
       <div class="col-sm-4">
-        <input type="text" class="form-control">
+        <div class="md-form-group">
+          <input class="md-input" ng-model="user.city">
+          <label>K.B.</label>
+         
+        </div>
       </div>
-      <label class="col-sm-2 control-label">N° Pasajeros</label>
       <div class="col-sm-4">
-        <input type="text" class="form-control">
+        <div class="md-form-group">
+          <input class="md-input" ng-model="user.state">
+          <label>N° Pasajeros</label>
+        </div>
       </div>
-  </div>
 
-<br> <br>
-   <div class="form-group"> 
-      <label class="col-sm-2 control-label">DUS</label>
       <div class="col-sm-4">
-        <input type="text" class="form-control">
+        <div class="md-form-group">
+          <input class="md-input" ng-model="user.postalCode">
+          <label>DUS</label>
+        </div>
       </div>
+       
+       
+       <div class="col-sm-6">
       <label class="col-sm-2 control-label">Sellos</label>
-      <div class="col-lg-4">
+      
         <select multiple class="form-control">
           <option>1</option>
           <option>2</option>
           <option>3</option>
-          <option>4</option>
-        </select>
-   
-        
-        <label class="col-sm-2 control-label">Nulo</label>
-        <div class="col-sm-4">
-        <input type="text" class="form-control">
+       </select>
+       </div>
+
+        <div class="col-sm-6">
+        <div class="md-form-group float-label">
+          <input class="md-input" ng-model="user.firstName" required>
+          <label>Sello Nulo</label>
+        </div>
       </div>
-</div>
-  
+    
  
+ 
+ <h4>Fecha</h4>
  <br><br>
- <h5>Responsive table</h5>
   <div class="table-responsive">
     <table class="table table-bordered bg-white">
       <thead>
         <tr>
           <th>Nº</th>
-          <th>Table heading</th>
-          <th>Table heading</th>
-          <th>Table heading</th>
-          <th>Table heading</th>
-          <th>Table heading</th>
-          <th>Table heading</th>
+          <th>Tipo Ingreso</th>
+          <th>Patente</th>
+          <th>Tipo Carga</th>
+          <th>K.B.</th>
+          <th>Pasajeros</th>
+          <th>DUS</th>
+          <th>Sellos</th>
+           <th>Fecha</th>
+           <th>Funcionario</th>
         </tr>
       </thead>
       <tbody>
         <tr>
+          <td>1</td>
           <td>Entrada</td>
-          <td>Table cell</td>
-          <td>Table cell</td>
-          <td>Table cell</td>
-          <td>Table cell</td>
-          <td>Table cell</td>
-          <td>Table cell</td>
+          <td>oi766546</td>
+          <td>Camion</td>
+          <td>7668.098</td>
+          <td>4</td>
+          <td>687000</td>
+          <td>123456</td>
+          <td>07-09-2016</td>
+          <td>Pamela Jara</td>
         </tr>
         <tr>
-          <td>Patente</td>
-          <td>Table cell</td>
-          <td>Table cell</td>
-          <td>Table cell</td>
-          <td>Table cell</td>
-          <td>Table cell</td>
-          <td>Table cell</td>
+          <td>2</td>
+          <td>Entrada</td>
+          <td>oi766546</td>
+          <td>Camion</td>
+          <td>7668.098</td>
+          <td>4</td>
+          <td>687000</td>
+          <td>123456</td>
+          <td>07-09-2016</td>
+          <td>Pamela Jara</td>
         </tr>
-        <tr>
+         <tr>
           <td>3</td>
-          <td>Table cell</td>
-          <td>Table cell</td>
-          <td>Table cell</td>
-          <td>Table cell</td>
-          <td>Table cell</td>
-          <td>Table cell</td>
+          <td>Entrada</td>
+          <td>oi766546</td>
+          <td>Camion</td>
+          <td>7668.098</td>
+          <td>4</td>
+          <td>687000</td>
+          <td>123456</td>
+          <td>07-09-2016</td>
+          <td>Pamela Jara</td>
         </tr>
       </tbody>
     </table>

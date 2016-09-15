@@ -24,7 +24,7 @@
       <div class="box bg-white">
         <div class="navbar md-whiteframe-z1 no-radius blue">
             <!-- brand -->
-            <img src="html/images/aduanalogo.jpg" style="display:inline" height="65px">
+             <img src="html/images/aduanalogo.jpg" style="display:inline" height="65px">
               <span class="m-l inline" style="display:inline"><b>ADUANAS OSORNO</b></span>
             <!-- / brand -->
         </div>
@@ -172,85 +172,90 @@
     </div>
     <!-- Content -->
   
-
+    <!-- Content -->
       
+    
      
+            
+
+    
       <div class="box-row">
         <div class="box-cell">
           <div class="box-inner padding">
-            
 
-  <div class="row">
-    <div class="col-lg-7 col-md-6 col-sm-6">
-      <div class="row no-gutter">
-        <div class="col-xs-12">
-          <div class="card">
-            <div class="card-heading">
-              <h2>Dashboard</h2>
-              <small>Welcome to the new material design dashboard</small>
-            </div>
-            <div class="card-tools">
-              <ul class="list-inline">
-                <li class="dropdown">
-                  <a md-ink-ripple data-toggle="dropdown" class="md-btn md-flat md-btn-circle">
-                    <i class="mdi-navigation-more-vert text-md"></i>
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-scale pull-right pull-up top text-color">
-                    <li><a href>Action</a></li>
-                    <li><a href>Another action</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-            <div class="card-body">
-              <div class="row" ng-controller="ChartCtrl">
-                <div class="col-sm-6">
-                  <div class="text-center">
-                    Server Status
-                  </div>
-                  <div class="p-md">
-                    <div ui-jp="plot" ui-options="
-                      [
-                        { data: [[1, 7.5], [2, 7.5], [3, 5.7], [4, 8.9], [5, 10], [6, 7], [7, 9], [8, 13], [9, 7], [10, 6]] },
-                        { data: [[1, 4.5], [2, 4.2], [3, 4.5], [4, 4.3], [5, 4.5], [6, 4.7], [7, 4.6], [8, 4.8], [9, 4.6], [10, 4.5]] }
-                      ], 
-                      {
-                        bars: { show: true, fill: true,  barWidth: 0.4, lineWidth: 1, order: 1, fillColor: { colors: [{ opacity: 0.5 }, { opacity: 0.9}] } },
-                        colors: ['#3f51b5','#4caf50'],
-                        series: { shadowSize: 3 },
-                        xaxis: { show: true, font: { color: '#ccc' }, position: 'bottom' },
-                        yaxis:{ show: true, font: { color: '#ccc' }},
-                        grid: { hoverable: true, clickable: true, borderWidth: 0, color: '#ccc' },
-                        tooltip: true,
-                        tooltipOpts: { content: '%x.0 is %y.4',  defaultTheme: false, shifts: { x: 0, y: -40 } }
-                      }
-                    " style="height:160px" >
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="text-center">
-                    Client Overview
-                  </div>
-                  <div class="p-md">
-                    <div ui-jp="plot" ui-options="
-                      [{label:'Series 1', data: 45}, {label:'Series 2', data: 5}, {label:'Series 3', data: 30}, {label:'Series 4', data: 20}],
-                      {
-                        series: { pie: { show: true, innerRadius: 0.55, stroke: { width: 3 }, label: { show: true, threshold: 0.05 } } },
-                        colors: ['#3f51b5','#4caf50'],
-                        grid: { hoverable: true, clickable: true, borderWidth: 0, color: '#ccc' },   
-                        tooltip: true,
-                        tooltipOpts: { content: '%s: %p.0%' }
-                      }
-                    " style="height:160px"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
+<div class="card" ng-controller="MDInputCtrl" >
+  
+ 
+     
+ 
+  <div class="card card-heading bg-dark">
+    <h2>Registrar Funcionario</h2>
+  </div>
+  
+     
+    
+     
+        
+       <div class="col-sm-6">
+        <div class="md-form-group float-label">
+          <input class="md-input" ng-model="user.firstName" required>
+          <label>Rut</label>
+        </div>
+      </div>
+          
+        
+        <div class="col-sm-6">
+        <div class="md-form-group float-label">
+          <input class="md-input" ng-model="user.firstName" required>
+          <label>Nombre</label>
+        </div>
+      </div>
+         <div class="col-sm-6">
+        <div class="md-form-group float-label">
+          <input class="md-input" ng-model="user.firstName" required>
+          <label>Apellido</label>
+        </div>
+      </div>
+         <div class="col-sm-6">
+        <div class="md-form-group float-label">
+          <input class="md-input" ng-model="user.firstName" required>
+          <label>Cargo</label>
+        </div>
+      </div>
+        <div class="col-sm-6">
+        <div class="md-form-group float-label">
+          <input class="md-input" ng-model="user.firstName" required>
+          <label>Celular</label>
+        </div>
+      </div>
+         <div class="col-sm-6">
+        <div class="md-form-group float-label">
+          <input class="md-input" ng-model="user.firstName" required>
+          <label>Email</label>
+        </div>
+      </div>
+     
+         <button type="submit" class="btn btn-danger m-t">Eliminar</button>
+         <button type="submit" class="btn btn-success m-t">Guardar</button>
+         <button type="submit" class="btn btn-primary m-t" >Modificar</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+  <!-- / content -->
+
+  
 
 <script src="html/scripts/app.min.js"></script>
 
 </body>
 </html>
+
